@@ -3,11 +3,34 @@
     color: #333;
     height: 50px;
     border-bottom: 1px solid black;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   body{
     background-color:#f2fbf9;
     padding-left: 20px;
   padding-right: 20px;
 
+  }
+  .logo-container-left {
+    display: flex;
+  }
+  
+  .logo-container-right {
+    display: flex;
+  }
+  
+  .logo-left {
+    margin-right: 10px;
+  }
+  
+  .logo-right {
+    margin-left: 10px;
+ 
+  
+  
+  
+  
+  
   }
