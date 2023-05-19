@@ -29,51 +29,128 @@
     margin-left: 10px;
  
   
-  
-  
-  
-  
-  }
 
-  .wework{
+  }
+  @media (max-width: 600px) {
+    .logo-container-right img:not(.menu-icon) {
+      display: none;
+    }
+    
+    .menu-icon-container {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .menu-icon-container {
+      display: none;
+    }
+  }
+  
+  /* menu */
+  .logo-container-right .logo-right {
+    display: block;
+  }
+  
+  .menu-icon-container .menu-icon {
+    display: none;
+  }
+  
+  .menu-icon-container.active .menu-icon {
+    display: block;
+  }
+  
+  .menu-icon-container.active .logo-right {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .logo-container-right .logo-right {
+      display: none;
+    }
+    
+    .menu-icon-container .menu-icon {
+      display: block;
+    }
+  }
+  
+/* click */
+.additional-icon {
+  display: none;
+}
+
+.additional-icon.show {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+  .wework {
     font-family: 'Proxima Nova';
-font-style: normal;
-font-weight: 800;
-font-size: 35px;
-line-height: 43px;
-/* identical to box height */
-
-
-color: #04433B;
-
-
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    color: #04433B;
   }
-
-  .buttonPS{
+  
+  .buttonPS {
     width: 147px;
-height: 40px;
-font-family: 'Proxima Nova';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 100px;
-/* or 625% */
-
-display: flex;
-border: none;
-border-radius: 5px;
-align-items: center;
-text-align:center;
-justify-content: space-around;
-color: #FFFFFF;
-background-color: #00b686;
+    height: 40px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+    background-color: #00b686;
   }
+  
+  .section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .wework {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    .buttonPS {
+      font-size: 12px;
+      height: 30px;
+      width: 80px;
+    }
+  }
+  
+ .section2 {
+  width: 100%;
+  overflow: hidden;
+}
 
- .section1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
- 
+ .section2 .centre{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+
 
  }
+ @media (max-width: 600px) {
+  .section2 .centre{
+    transform: scale(1.2); /* Increase the scale to zoom in */
+  }}
