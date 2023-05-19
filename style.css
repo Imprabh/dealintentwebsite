@@ -2,7 +2,7 @@
     background-color:#f2fbf9;
     color: #333;
     height: 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 0.5px solid lightgray;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,3 +34,46 @@
   
   
   }
+
+  .wework{
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 43px;
+/* identical to box height */
+
+
+color: #04433B;
+
+
+  }
+
+  .buttonPS{
+    width: 147px;
+height: 40px;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 100px;
+/* or 625% */
+
+display: flex;
+border: none;
+border-radius: 5px;
+align-items: center;
+text-align:center;
+justify-content: space-around;
+color: #FFFFFF;
+background-color: #00b686;
+  }
+
+ .section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+ 
+
+ }
