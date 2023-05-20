@@ -154,3 +154,42 @@
   .section2 .centre{
     transform: scale(1.2); /* Increase the scale to zoom in */
   }}
+
+
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .additional-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .text-overlay h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 601px) {
+    .text-overlay h2 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
