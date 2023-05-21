@@ -146,6 +146,7 @@
  .section2 .centre{
   width: 100%;
   height: auto;
+  margin-top: -0.5%;
   transition: transform 0.3s ease-in-out;
 
 
@@ -158,6 +159,7 @@
 
 
   .image-container {
+    margin-bottom: 10%;
     position: relative;
     width: 100%;
     height: auto;
@@ -165,13 +167,56 @@
   
   .additional-image {
     position: absolute;
-    top: 0;
+    margin-top: -2%;
+    top: 7px;
     right: 0;
     width: 50%;
     height: auto;
     object-fit: cover;
   }
-  
+
+  .left-bottom {
+    position: absolute;
+    top: 62%;
+    left: 18px;
+    width: 20%;
+    height: auto;}
+
+
+    .mul {
+      position: absolute;
+    top: 120%;
+    right: 12px;
+    width: 15%;
+    height: auto;}
+
+
+  .project {  
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+    top: 125%;
+    left: 2%;
+    color: rgb(0, 0, 0);
+  }
+     
+  @media (max-width: 900px) {
+    .project  {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .project   {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+
+
+
   .text-overlay {
     position: absolute;
     top: 50%;
@@ -187,7 +232,14 @@
   }
   
   
-  @media (max-width: 601px) {
+  @media (max-width: 900px) {
+    .text-overlay h2 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 650px) {
     .text-overlay h2 {
       font-size: 1rem;
       font-weight: bold;
